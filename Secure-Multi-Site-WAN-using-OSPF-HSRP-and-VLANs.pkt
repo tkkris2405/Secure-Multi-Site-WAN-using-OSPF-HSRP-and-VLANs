@@ -1,0 +1,23 @@
+HQ Router (Router2)
+MLS0
+MLS1
+Switch0
+
+Branch A
+  Router0
+  Switch1
+  VLAN 10
+  VLAN 20
+
+Branch B
+  Router1
+  Switch2
+  VLAN 10
+  VLAN 20
+
+OSPF Configuration
+HSRP Configuration
+ACL Configuration
+VLAN Configuration
+WAN Cloud
+IP Addressing
