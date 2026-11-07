@@ -1,4 +1,5 @@
 Secure-Multi-Site-WAN-using-OSPF-HSRP-and-VLANs
+
 📖 Project Overview-
 
 This project simulates a secure enterprise network consisting of a Headquarters (HQ) and two Branch Offices interconnected through a Wide Area Network (WAN).
@@ -6,11 +7,17 @@ This project simulates a secure enterprise network consisting of a Headquarters 
 The network was designed and implemented in Cisco Packet Tracer to demonstrate enterprise networking concepts including:
 
 VLAN Segmentation
+
 Inter-VLAN Routing
+
 OSPF Dynamic Routing
+
 HSRP High Availability
+
 WAN Connectivity
+
 ACL-Based Access Control
+
 Branch-to-HQ Communication
 
 🎯 Project Objectives-
@@ -27,99 +34,116 @@ Simulate a real-world enterprise network.
 Headquarters (HQ):
 
 Router2 (HQ WAN Router)
+
 Multilayer Switch 0 (HSRP Active)
+
 Multilayer Switch 1 (HSRP Standby)
+
 Access Switch
+
 IT Department
+
 Finance Department
+
 HR Department
+
 Server Network
 
 Branch A:
 
-Router0
-Access Switch
-Sales VLAN
-Finance VLAN
+Router0,
+Access Switch,
+Sales VLAN,
+Finance VLAN.
 
 Branch B:
 
-Router1
-Access Switch
-Sales VLAN
-Finance VLAN
+Router1,
+Access Switch,
+Sales VLAN,
+Finance VLAN,
 
 🛠 Technologies Used-
 
-Cisco Packet Tracer
-VLANs
-Inter-VLAN Routing
-Router-on-a-Stick
-OSPF (Open Shortest Path First)
-HSRP (Hot Standby Router Protocol)
-ACLs (Access Control Lists)
-WAN Connectivity
-Layer 3 Switching
+Cisco Packet Tracer,
+VLANs,
+Inter-VLAN Routing,
+Router-on-a-Stick,
+OSPF (Open Shortest Path First),
+HSRP (Hot Standby Router Protocol),
+ACLs (Access Control Lists),
+WAN Connectivity,
+Layer 3 Switching,
 
 🌐 IP Addressing Plan
-Headquarters
+Headquarters:
+
 VLAN 30 - IT
-Device	IP Address
+
+Device	IP Address:
+
 HSRP Virtual Gateway	192.168.30.1
+
 MLS0	192.168.30.2
+
 MLS1	192.168.30.3
+
 IT PC	192.168.30.10
+
 Network: 192.168.30.0/24
 
 VLAN 40 - Finance
-Device	IP Address
-HSRP Virtual Gateway	192.168.40.1
-MLS0	192.168.40.2
-MLS1	192.168.40.3
-Finance PC	192.168.40.10
-Network:192.168.40.0/24
+Device	IP Address,
+HSRP Virtual Gateway	192.168.40.1,
+MLS0	192.168.40.2,
+MLS1	192.168.40.3,
+Finance PC	192.168.40.10,
+Network:192.168.40.0/24.
 
-VLAN 50 - HR
-Device	IP Address
-HSRP Virtual Gateway	192.168.50.1
-MLS0	192.168.50.2
-MLS1	192.168.50.3
-HR PC	192.168.50.10
-Network:192.168.50.0/24
+VLAN 50 - HR,
+Device	IP Address,
+HSRP Virtual Gateway	192.168.50.1,
+MLS0	192.168.50.2,
+MLS1	192.168.50.3,
+HR PC	192.168.50.10,
+Network:192.168.50.0/24.
 
-VLAN 60 - Servers
-Device	IP Address
-HSRP Virtual Gateway	192.168.60.1
-MLS0	192.168.60.2
-MLS1	192.168.60.3
-Server	192.168.60.10
-Network:192.168.60.0/24
+VLAN 60 - Servers,
+Device	IP Address,
+HSRP Virtual Gateway	192.168.60.1,
+MLS0	192.168.60.2,
+MLS1	192.168.60.3,
+Server	192.168.60.10,
+Network:192.168.60.0/24.
 
 Branch A
-VLAN 10 - Sales
-Device	IP Address
-Gateway	10.1.1.1
-Sales PC	10.1.1.2
-Network:10.1.1.0/29
+
+VLAN 10 - Sales,
+Device	IP Address,
+Gateway	10.1.1.1,
+Sales PC	10.1.1.2,
+Network:10.1.1.0/29.
 
 VLAN 20 - Finance
-Device	IP Address
-Gateway	10.1.1.9
-Finance PC	10.1.1.10
-Network:10.1.1.8/29
+
+Device	IP Address,
+Gateway	10.1.1.9,
+Finance PC	10.1.1.10,
+Network:10.1.1.8/29.
 
 Branch B
-VLAN 10 - Sales
-Device	IP Address
-Gateway	10.1.2.1
-Sales PC	10.1.2.2
-Network:10.1.2.0/29
 
-VLAN 20 - Finance
-Device	IP Address
-Gateway	10.1.2.9
-Finance PC	10.1.2.10
-Network:10.1.2.8/29
+VLAN 10 - Sales,
+Device	IP Address,
+Gateway	10.1.2.1,
+Sales PC	10.1.2.2,
+Network:10.1.2.0/29.
+
+VLAN 20 - Finance,
+Device	IP Address,
+Gateway	10.1.2.9,
+Finance PC	10.1.2.10,
+Network:10.1.2.8/29.
 
 🌍 WAN Connectivity-
 Branch A ↔ Headquarters
